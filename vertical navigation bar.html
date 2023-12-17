@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vertical Navigation bar</title>
+    <style>
+        ul {padding: 0;
+        text-decoration: none;}
+        li a{display: inline-block; width: 50px; padding: 10px; background-color: blue; color:white;}
+        li a:hover{background-color: grey;}
+        .dropdown {display:inline-block; position: relative;}
+        .dropdown-content {display: none; padding: 15px 25px; width: 50px; background-color: coral; z-index: 1;position: absolute;}
+        .dropdown:hover .dropdown-content{display: block;}
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#News">News</a></li>
+        <li><a href="#Contact">Contact</a></li>
+    </ul>
+    <div class="dropdown">
+        <span>Move the mouse over the text</span>
+    </div>
+        <div class="dropdown-content">
+        <p>HELLO WORLD</p>
+        </div>
+</body>
+</html>
